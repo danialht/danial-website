@@ -1,5 +1,5 @@
 import Header from './Header.jsx'
-import About from './About.jsx'
+import HelloCard from './HelloCard.jsx'
 import Skills from './Skills.jsx'
 import Experiences from './Experiences.jsx'
 import Footer from './Footer.jsx'
@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <Header />
-            <About />
+            <HelloCard />
             <Skills />
             <Experiences />
             <Footer />
