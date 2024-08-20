@@ -1,0 +1,15 @@
+.image {
+    border-radius: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    width: 30vh;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    width: 100vh;
+}
