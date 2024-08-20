@@ -1,3 +1,5 @@
+import './header.css'
+
 function Header() {
     return (
         <>
@@ -7,8 +9,8 @@ function Header() {
                     <li>Skills</li>
                     <li>Experiences</li>
                 </ul>
+                <hr />
             </nav>
-            <hr />
         </>
     );
 }

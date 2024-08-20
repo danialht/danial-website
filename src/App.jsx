@@ -11,6 +11,9 @@ function App() {
         <>
             <Header />
             <HelloCard />
+            <HelloCard />
+            <HelloCard />
+            <HelloCard />
             <Skills />
             <Experiences />
             <Footer />
