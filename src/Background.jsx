@@ -6,16 +6,12 @@ import { loadSlim } from "tsparticles-slim";
 function Background() {
 
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
+        // console.log(engine);
         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
 
     return (
@@ -26,11 +22,11 @@ function Background() {
             options={{
                 fullScreen: {
                     enable: true,
-                    zIndex: -1 // or any value is good for you, if you use -1 set `interactivity.detectsOn` to `"window"` if you need mouse interactions
+                    zIndex: -1
                 },
                 background: {
                     color: {
-                        value: "#0d47a1",
+                        value: "#ffffff",
                     },
                 },
                 fpsLimit: 120,
@@ -54,10 +50,10 @@ function Background() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#b030ff",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#b030ff",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,

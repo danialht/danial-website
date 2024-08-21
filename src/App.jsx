@@ -1,6 +1,6 @@
 import Header from './Header.jsx'
 import HelloCard from './HelloCard.jsx'
-import Skills from './Skills.jsx'
+import SkillsBox from './SkillsBox.jsx'
 import Experiences from './Experiences.jsx'
 import Footer from './Footer.jsx'
 import Background from './Background.jsx'
@@ -13,7 +13,7 @@ function App() {
             <Background />
             <Header />
             <HelloCard />
-            <Skills />
+            <SkillsBox />
             <Experiences />
             <Footer />
         </>

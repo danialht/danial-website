@@ -1,0 +1,35 @@
+.logoSquare {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 20px;
+    float: inline-start;
+}
+
+.logoRectangle {
+    height: 12vh;
+    width: 20vh;
+    border-radius: 20px;
+    float: inline-start;
+}
+
+.skillCardDiv {
+    display: inline-block;
+    background: white;
+    height: 20vh;
+    width: 20vh;
+    margin: 4vh;
+    filter: blur(0px);
+    place-content: center;
+    border-radius: 20px;
+}
+
+.skillCardDivBlurred {
+    display: inline-block;
+    background: white;
+    height: 20vh;
+    width: 20vh;
+    margin: 4vh;
+    filter: blur(20px);
+    place-content: center;
+    border-radius: 20px;
+}
