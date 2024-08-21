@@ -1,0 +1,13 @@
+.skills-card {
+    background-color: rgb(188, 188, 188);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+}
+
+.logo {
+    border: 1px solid black;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 20px;
+    margin: 5vh;
+}
