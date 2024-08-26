@@ -9,12 +9,12 @@ function HelloCard() {
     return (
         <div className="card">
             <img className="image" alt="profile picture" src="https://avatars.githubusercontent.com/u/119340172?v=4" />
-            <div style={{ 'display': 'inline-block', verticalAlign: 'top' }}>
+            <div style={{ 'display': 'inline-block', verticalAlign: 'top', marginLeft: '5vw' }}>
                 <TypeAnimation
                     sequence={["Hi! 👋", 1500, "Hi! 👋\nI'm Danial.", 1500, "", 500]}
                     speed={50}
                     repeat={Infinity}
-                    style={{ whiteSpace: 'pre-line', fontSize: '10vh' }}
+                    style={{ whiteSpace: 'pre-line', fontSize: '5vw' }}
                 />
             </div>
 

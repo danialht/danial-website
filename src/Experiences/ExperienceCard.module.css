@@ -1,0 +1,26 @@
+.role {
+    margin: 0;
+    font-size: 6vh;
+}
+
+.place {
+    margin: 0;
+    font-size: 3vh;
+}
+
+.date {
+    margin: 0;
+    font-size: 3vh;
+}
+
+.description {
+    border: 1px solid black;
+    margin: 0;
+    font-size: 3vh;
+    padding: 10px;
+}
+
+.mainDiv {
+    margin: 2vh;
+    text-align: left;
+}
