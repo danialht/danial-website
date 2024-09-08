@@ -3,6 +3,7 @@ import HelloCard from './HelloCard.jsx'
 import SkillsBox from './SkillsBox.jsx'
 import Experiences from './Experiences/Experiences.jsx'
 import Footer from './Footer.jsx'
+import Educations from './Educations/Educations.jsx'
 import Background from './Background.jsx'
 import DescriptionBox from './SkillCard/DescriptionBox.jsx'
 import { useState } from 'react'
@@ -22,15 +23,16 @@ function App() {
 
 
     return (
-        <>
+        <div style={{ 'align-items': 'center', 'text-align': 'center' }}>
             <DescriptionBox visible={state[2]} x={state[0]} y={state[1]} />
             <Background />
             <Header />
             <HelloCard />
-            <SkillsBox showDescription={showDescription} hideDescription={hideDescription} onMouseMove={(e) => { setState([e.pageX, e.pageY, state[2]]) }} />
+            <Educations />
             <Experiences />
+            <SkillsBox showDescription={showDescription} hideDescription={hideDescription} onMouseMove={(e) => { setState([e.pageX, e.pageY, state[2]]) }} />
             <Footer />
-        </>
+        </div>
     );
 }
 
