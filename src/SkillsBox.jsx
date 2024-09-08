@@ -1,5 +1,6 @@
 import './skillsbox.css'
 import SkillCard from './SkillCard/SkillCard.jsx'
+import DescriptionBox from './SkillCard/DescriptionBox.jsx'
 
 import { useState } from 'react'
 
@@ -14,7 +15,7 @@ import ScikitlearnLogo from './assets/logos/scikitlearn.png'
 import TensorflowLogo from './assets/logos/tensorflow.png'
 import TypescriptLogo from './assets/logos/typescript.svg'
 
-function Skills() {
+function SkillsBox(props) {
 
     const [active, setActive] = useState(-1);
     // STATES:
@@ -23,10 +24,12 @@ function Skills() {
 
     let handleMouseExit = (e, x) => {
         setActive(-1)
+        props.hideDescription()
     };
 
     let handleMouseEnter = (e, x) => {
         setActive(x)
+        props.showDescription()
     };
 
     let skillCards = [
@@ -55,9 +58,8 @@ function Skills() {
 
     return (
         <>
-            <div className="skills-card">
+            <div onMouseMove={props.onMouseMove} className="skills-card">
                 <h1>Skills🔥⚡</h1>
-                <p>Click on each image to see descriptions.</p>
                 {skillCards[0]}
                 {skillCards[1]}
                 {skillCards[2]}
@@ -77,4 +79,4 @@ function Skills() {
     );
 }
 
-export default Skills
+export default SkillsBox

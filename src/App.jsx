@@ -4,16 +4,30 @@ import SkillsBox from './SkillsBox.jsx'
 import Experiences from './Experiences/Experiences.jsx'
 import Footer from './Footer.jsx'
 import Background from './Background.jsx'
+import DescriptionBox from './SkillCard/DescriptionBox.jsx'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
 
+    const [state, setState] = useState([0, 0, false]);
+
+    let showDescription = () => {
+        setState([state[0], state[1], true])
+    }
+    let hideDescription = () => {
+        setState([state[0], state[1], false])
+    }
+
+
+
     return (
         <>
+            <DescriptionBox visible={state[2]} x={state[0]} y={state[1]} />
             <Background />
             <Header />
             <HelloCard />
-            <SkillsBox />
+            <SkillsBox showDescription={showDescription} hideDescription={hideDescription} onMouseMove={(e) => { setState([e.pageX, e.pageY, state[2]]) }} />
             <Experiences />
             <Footer />
         </>

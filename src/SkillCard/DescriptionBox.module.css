@@ -1,0 +1,5 @@
+.mainBox {
+    background-color: rgba(65, 65, 65, 0.5);
+    position: fixed;
+    top: 500px;
+}
