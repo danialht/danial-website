@@ -4,11 +4,11 @@ function EducationCard(props) {
     return (
         <div className={styles.mainDiv}>
             <img className={styles.logo} src={props.imageSrc} />
-            <p className={styles.textDiv}>
+            <div className={styles.textDiv}>
                 <p className={styles.name}>{props.name}</p>
                 <p className={styles.description}>{props.firstLine}</p>
                 <p className={styles.description}>{props.secondLine}</p>
-            </p>
+            </div>
         </div>
     )
 }

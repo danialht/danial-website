@@ -23,7 +23,10 @@ function App() {
 
 
     return (
-        <div style={{ 'align-items': 'center', 'text-align': 'center' }}>
+        <div style={{
+            alignItems: 'center',
+            textAlign: 'center',
+        }}>
             <DescriptionBox visible={state[2]} x={state[0]} y={state[1]} />
             <Background />
             <Header />

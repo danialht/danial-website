@@ -1,5 +1,4 @@
 import EducationCard from './EducationCard.jsx'
-import SharifLogo from '../assets/logos/Sharif.png'
 import MITLogo from '../assets/logos/mit.png'
 
 function Educations() {
